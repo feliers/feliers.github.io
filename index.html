@@ -185,7 +185,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-12-17 09:05:07 / 修改时间：09:38:20" itemprop="dateCreated datePublished" datetime="2021-12-17T09:05:07+08:00">2021-12-17</time>
+              <time title="创建时间：2021-12-17 09:05:07 / 修改时间：17:37:14" itemprop="dateCreated datePublished" datetime="2021-12-17T09:05:07+08:00">2021-12-17</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -208,91 +208,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <span id="more"></span>
-
-<h2 id="一、HDFS"><a href="#一、HDFS" class="headerlink" title="一、HDFS"></a>一、HDFS</h2><h5 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h5><p>HDFS是一个分布式的文件系统，可用于存储文件。适合一次写入多次读取的模式。但是支持文件修改，如有错误可将错误文件删除后重新上传。</p>
-<h5 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h5><ul>
-<li><p>优点：</p>
-<ol>
-<li><p>高容错性。</p>
-<p>数据有多个副本，通过增加副本的形式，提高容错性。</p>
-<p>如果某个副本丢失，其他副本有备份，可进行恢复。</p>
-</li>
-<li><p>适合大数据处理</p>
-<p>能够处理大规模的数据(可以是 GB、TB甚至是TB级别的数据)</p>
-<p>能够处理百万规模的文件数量。</p>
-</li>
-<li><p>部署成本低</p>
-<p>可以搭建在价格低廉的机器上。</p>
-<p>通过多副本机制，提高可靠性。</p>
-</li>
-</ol>
-</li>
-<li><p>缺点</p>
-<ol>
-<li><p>不适合低延时数据的访问。比如mysql的毫秒级读写数据。</p>
-</li>
-<li><p>无法高效的对大量小文件进行存储。</p>
-<p>原因：</p>
-<ol>
-<li><p>存储小文件会占用namenode 的存储空间，</p>
-<pre><code>2. 小文件存储的寻址时间会超过读取时间。
-</code></pre>
-</li>
-</ol>
-</li>
-<li><p>不支持并发写入（多个用户写入一个文件）、文件随机修改（更改文件的位置）</p>
-</li>
-</ol>
-</li>
-</ul>
-<h2 id="二、hdfs常用命令操作"><a href="#二、hdfs常用命令操作" class="headerlink" title="二、hdfs常用命令操作"></a>二、hdfs常用命令操作</h2><ol>
-<li><p><code>-</code> help     </p>
-<p>命令示例：hadoop fs -help rm</p>
-</li>
-<li><p><code>-</code> ls 查看目录</p>
-<p>命令示例：hadoop fs -ls /</p>
-</li>
-<li><p><code>-</code>mkdir hdfs上创建目录</p>
-<blockquote>
-<p>hdfs处于安全模式下无法创建目录</p>
-<p>报错信息：mkdir :Cannot create directory /aaa/bbb, Name node is in safe mode</p>
-<p>解决方法：输入命令：hadoop dfsadmin -safemode leave</p>
-<p>提示：Safe mode is OFF</p>
-</blockquote>
-<p>命令示例：hadoop fs -mkdir -p /aaa/bbb</p>
-</li>
-<li><p><code>-</code>moveFromLocal 移动其他目录的文件到hdfs上</p>
-<p>命令示例：hadoop fs -moveFromLocal ./hello.txt /aaa/bbb</p>
-</li>
-<li><p><code>-</code>appendToFile 追加一个文件到已存在的文件末尾（将此文件的内容追加到另外一个文件中）</p>
-<p>命令示例：hadoop fs -appendToFile ./word.txt /aaa/bbb/hello.txt</p>
-</li>
-<li><p><code>-</code>cat 查看文件内容</p>
-<p>命令示例：hadoop fs -cat /aaa/bbb/hello.txt</p>
-</li>
-<li><p><code>-</code>tail 显示文件的末尾</p>
-<p>命令示例：hadoop fs -tail /aaa/bbb/hello.txt</p>
-</li>
-<li><p><code>-</code>chown 、<code>-</code>chgrp、<code>-</code>chmod 修改权限</p>
-<p>命令示例：hadoop fs -chown  root:root /aaa/bbb/hello.txt</p>
-</li>
-<li><p><code>-</code>copyFromLocal 从本地文件系统拷贝文件到HDFS上</p>
-<p>命令示例：hadoop fs -copyFromLocal Readme.md /</p>
-</li>
-<li><p><code>-</code>copyToLocal 从HDFS拷贝到本地</p>
-<p>命令示例：hadoop fs -copyToLocal /aaa/bbb/hello.txt ./</p>
-</li>
-<li><p><code>-</code>cp 从HDFS的一个路径拷贝到另外一个路径</p>
-<p>命令示例：hadoop fs -cp /aaa/bbb/hello.txt /bigData.txt</p>
-</li>
-<li><p><code>-</code>mv 在HDFS中移动文件</p>
-<p>命令示例：hadoop fs -mv /aaa/bbb/hello.txt /aaa/bbb</p>
-</li>
-<li><p><code>-</code>rm 删除文件</p>
-</li>
-</ol>
-
+          <p>简述HDFS文件系统的优缺点，介绍HDFS文件系统的基本操作命令。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/12/17/Hadoop%E6%90%AD%E5%BB%BA/">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
