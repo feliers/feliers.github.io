@@ -20,12 +20,12 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="一 $设X \sim N_2(\mu,\Sigma),其中，X &#x3D; (x1,x2)’,\mu &#x3D; (\mu1, \mu2)’,$  $ \Sigma &#x3D; \sigma^2 \begin{pmatrix}1,\rho \ \rho, 1 \end{pmatrix}, 则Cov(x1+x2,x1-x2) &#x3D; \underline{   }。$ 解：$因为\Sigma&#x3D;cov(x,x)&#x3D;E(x-E(x)">
+  <meta name="description" content="一 $设X \sim N_2(\mu,\Sigma),其中，X &#x3D; (x1,x2)’,\mu &#x3D; (\mu1, \mu2)’,$  $ \Sigma &#x3D; \sigma^2 \begin{pmatrix}1,\rho \\ \rho, 1 \end{pmatrix}, 则Cov(x1+x2,x1-x2) &#x3D; \underline{   }。$ 解：$因为\Sigma&#x3D;cov(x,x)&#x3D;E(x-E(x">
 <meta property="og:type" content="article">
 <meta property="og:title" content="汐">
 <meta property="og:url" content="http://example.com/2021/12/28/duoyuanFX/index.html">
 <meta property="og:site_name" content="汐">
-<meta property="og:description" content="一 $设X \sim N_2(\mu,\Sigma),其中，X &#x3D; (x1,x2)’,\mu &#x3D; (\mu1, \mu2)’,$  $ \Sigma &#x3D; \sigma^2 \begin{pmatrix}1,\rho \ \rho, 1 \end{pmatrix}, 则Cov(x1+x2,x1-x2) &#x3D; \underline{   }。$ 解：$因为\Sigma&#x3D;cov(x,x)&#x3D;E(x-E(x)">
+<meta property="og:description" content="一 $设X \sim N_2(\mu,\Sigma),其中，X &#x3D; (x1,x2)’,\mu &#x3D; (\mu1, \mu2)’,$  $ \Sigma &#x3D; \sigma^2 \begin{pmatrix}1,\rho \\ \rho, 1 \end{pmatrix}, 则Cov(x1+x2,x1-x2) &#x3D; \underline{   }。$ 解：$因为\Sigma&#x3D;cov(x,x)&#x3D;E(x-E(x">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-12-28T14:06:06.777Z">
 <meta property="article:modified_time" content="2021-12-28T14:12:51.499Z">
@@ -76,7 +76,9 @@
   </style>
 </noscript>
 
-</head>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+<!-- hexo injector head_end end --></head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
   <div class="container use-motion">
@@ -206,11 +208,11 @@
         <h2 id="一"><a href="#一" class="headerlink" title="一"></a>一</h2><ol>
 <li>$设X \sim N_2(\mu,\Sigma),其中，X = (x1,x2)’,\mu = (\mu1, \mu2)’,$</li>
 </ol>
-<p>$ \Sigma = \sigma^2 \begin{pmatrix}1,\rho \ \rho, 1 \end{pmatrix}, 则Cov(x1+x2,x1-x2) = \underline{   }。$</p>
+<p>$ \Sigma = \sigma^2 \begin{pmatrix}1,\rho \\ \rho, 1 \end{pmatrix}, 则Cov(x1+x2,x1-x2) = \underline{   }。$</p>
 <p>解：$因为\Sigma=cov(x,x)=E(x-E(x))(x-E(x))’=D(x)$ </p>
 <p>$所以Cov(x1+x2,x1-x2)=E(x1+x2,E(x1+x2))(x1-x2,E(x1-x2))$ </p>
 <p>$\underline{X \sim N_2()} 表示X服从2元正态分布$  </p>
-<ol start="2">
+<ol>
 <li><p>$设A与B为常数矩阵，Cov(x,y)=\Sigma,则Cov(Ax,By)=\underline{Acov(x,y)B’}$</p>
 <p>解：性质2（p04）当A，B，为常数矩阵时，协方差阵有如下性质：</p>
 <ol>
@@ -228,11 +230,11 @@
 </li>
 <li><p>简述主成分分析与因子分析的基本思想，并比较二者的异同点</p>
 </li>
-<li><p>设随机变量X的协方差矩阵为$V(X)=\begin{pmatrix}16&amp;-4 &amp;3 \ -4 &amp; 4 &amp;  -2 \ 3 &amp; -2 &amp; 9\end{pmatrix}$ 求其相关系数矩阵R</p>
+<li><p>设随机变量X的协方差矩阵为$V(X)=\begin{pmatrix}16&amp;-4 &amp;3 \\ -4 &amp; 4 &amp;  -2 \\ 3 &amp; -2 &amp; 9\end{pmatrix}$ 求其相关系数矩阵R</p>
 </li>
-<li><p>$X\sim N_3(\mu, \Sigma),A=\begin{pmatrix}1 &amp; -2&amp;1\ -1&amp; 1 &amp;  0\end{pmatrix},\mu =\begin{pmatrix}1&amp;1&amp;-1\end{pmatrix},\Sigma=\begin{pmatrix}16&amp;-4&amp;2\-4&amp;4&amp;-1\2&amp;-1&amp;4\end{pmatrix},求Y=AX的分布$</p>
+<li><p>$X\sim N_3(\mu, \Sigma),A=\begin{pmatrix}1 &amp; -2&amp;1\\ -1&amp; 1 &amp;  0\end{pmatrix},\mu =\begin{pmatrix}1&amp;1&amp;-1\end{pmatrix},\Sigma=\begin{pmatrix}16&amp;-4&amp;2\-4&amp;4&amp;-1\\2&amp;-1&amp;4\end{pmatrix},求Y=AX的分布$</p>
 </li>
-<li><p>$设三元总体X=（x1,x2,x3)’的协方差矩阵为 \Sigma=\begin{pmatrix}4&amp;1&amp;2\1&amp;9&amp;-3\2&amp;-3&amp;25\end{pmatrix}求总体的主成分以及各主成分的贡献率$ </p>
+<li><p>$设三元总体X=（x1,x2,x3)’的协方差矩阵为 \Sigma=\begin{pmatrix}4&amp;1&amp;2\\1&amp;9&amp;-3\\2&amp;-3&amp;25\end{pmatrix}求总体的主成分以及各主成分的贡献率$ </p>
 </li>
 </ol>
 <h2 id="二"><a href="#二" class="headerlink" title="二"></a>二</h2><ol>
@@ -242,14 +244,14 @@
 <h2 id="三"><a href="#三" class="headerlink" title="三"></a>三</h2><ol>
 <li>设随机向量X的 协方差矩阵为</li>
 </ol>
-<p>$V(X)=\begin{pmatrix}16&amp;-4&amp;3 \ -4&amp;4&amp;-2 \ 3&amp;-2&amp;9 \end{pmatrix}$ </p>
+<p>$V(X)=\begin{pmatrix}16&amp;-4&amp;3 \\ -4&amp;4&amp;-2 \\ 3&amp;-2&amp;9 \end{pmatrix}$ </p>
 <p>求其相关系数矩阵R。</p>
 <p>解：因为：$R=(corr(X_i,X_j))=(r_{ij})_{p\times p}$ </p>
 <p>$R(i,j)=\frac{c(i,j)}{\sqrt{c(i,i)*c(j,j)}}$   </p>
 <p>相关系数为：</p>
-<p>$R=\begin{pmatrix}1 &amp; -\frac{1}{2} &amp; \frac{1}{4} \ -\frac{1}{2} &amp; 1 &amp; -\frac{1}{3} \ \frac{1}{4} &amp; -\frac{1}{3} &amp; 1\end{pmatrix}$</p>
-<ol start="2">
-<li><p>$设X\sim N_3(\mu,\Sigma),A = \begin{pmatrix}1 &amp; -2 &amp; 1 \ -1 &amp; 1 &amp; 0\end{pmatrix} ,$$ 其中\mu = \begin{pmatrix}1 &amp; 1 &amp; -1\end{pmatrix} ,\Sigma = \begin{pmatrix} 16 &amp; -4 &amp; 2 \ -4 &amp; 4 &amp; -1 \ 2 &amp; -1 &amp; 4 \end{pmatrix}, 求Y=AX的分布。$  </p>
+<p>$R=\begin{pmatrix}1 &amp; -\frac{1}{2} &amp; \frac{1}{4} \\ -\frac{1}{2} &amp; 1 &amp; -\frac{1}{3} \\ \frac{1}{4} &amp; -\frac{1}{3} &amp; 1\end{pmatrix}$</p>
+<ol>
+<li><p>$设X\sim N_3(\mu,\Sigma),A = \begin{pmatrix}1 &amp; -2 &amp; 1 \\ -1 &amp; 1 &amp; 0\end{pmatrix} ,$$ 其中\mu = \begin{pmatrix}1 &amp; 1 &amp; -1\end{pmatrix} ,\Sigma = \begin{pmatrix} 16 &amp; -4 &amp; 2 \\ -4 &amp; 4 &amp; -1 \\ 2 &amp; -1 &amp; 4 \end{pmatrix}, 求Y=AX的分布。$  </p>
 <p>解</p>
 </li>
 <li><p>已知两个总体$\pi_1,\pi_2的概率密度分别为f_1(x)与f_2(x)，且总体的先验概率$$</p>
@@ -257,7 +259,7 @@
 <p>(1)建立最小平均误判代价（ECM）判别规则；</p>
 <p>(2)设有一新样品$x_0=0.36,f_x(x_0)=0.24,判定x_0的归属问题。$</p>
 </li>
-<li><p>设三元总体$x=(x_1,x_2,x_3)’$的协方差矩阵为$\Sigma=\begin{pmatrix} 4 &amp; 1 &amp; 2 \ 1 &amp; 9 &amp; -3 \ 2 &amp; -3 &amp; 25 \end{pmatrix}$ </p>
+<li><p>设三元总体$x=(x_1,x_2,x_3)’$的协方差矩阵为$\Sigma=\begin{pmatrix} 4 &amp; 1 &amp; 2 \\ 1 &amp; 9 &amp; -3 \\ 2 &amp; -3 &amp; 25 \end{pmatrix}$ </p>
 <p>试求总体的主成分以及个主成分的贡献率。</p>
 </li>
 <li></li>
@@ -267,60 +269,33 @@
 </li>
 <li><p>判别分析是用于判别样本所属类型的一种统计分析方法</p>
 </li>
-<li><p>变量之间的确定性关系$\underline{函数关系}$</p>
-</li>
-<li><p>R软件是免费开源的</p>
-</li>
-<li><p>第一对典型相关系数显著性检验统计量服从$\underline{\mathcal{X}^2[(p-1)(q-1)]}$ </p>
-</li>
-<li><p>对应分析是将R型和Q型因子分析联合起来进行的统计分析方法</p>
-</li>
-<li><p>两个或两个以上的变量之间相互影响的关系是$\underline{平行关系}$</p>
-</li>
-<li><p>对于典型变量分析描述正确的是：典型相关系数越大，则说明带典型变量对典型变量的解释能力越高</p>
-</li>
-<li><p>两组变量一组有p个变量，另一组有q个变量，且p&lt;q进行典型相关分析，则：有p个典型相关系数</p>
-</li>
-<li><p>典型相关研究的是两组变量线性间的相关关系</p>
-</li>
-<li><p>相关分析的研究内容：现象之间是否相关、现象之间相关的密切程度、现象之间相关的方向</p>
-</li>
-<li><p>因子分析的特点： 因子变量的数量远远少于原始变量的个数、因子变量并非原始变量的简单概念、因子变量之间没有线性关系、因子变量具有明确的解释性，可以最大限度地发挥专业分析的作用。</p>
-</li>
-<li><p>可进行聚类的统计量有距离和相似系数</p>
-</li>
-<li><p>回归分析是研究依存关系的相关变量之间的关系</p>
-</li>
-<li><p>典型相关分析是研究两组变量之间相关关系的统计分析方法</p>
-</li>
-<li><p>在R语言中计算均值的函数是：mean() X的样本均值：6.67 计算方差的函数是var，X的样本方差为：2.5</p>
-</li>
-<li><p>相关分析是研究呈平行关系的相关变量之间的关系</p>
-</li>
-<li><p>椅子分析中因子载荷系数的统计意义是：第i个变量和第j个公因子之间的相关系数</p>
-</li>
-<li><p>解释变量一般有3种取值方法</p>
-</li>
-<li><p>对应分析是将Q型因子分析和R型因子分析结合起来的统计分析方法</p>
-</li>
-<li><p>聚类分析的方法有Q型聚类分析和R型聚类分析</p>
-</li>
-<li><p>线性相关分析是用相关系数表示两个变量之间的相互的线性关系</p>
-</li>
-<li><p>对应分析反应的是样品和变量之间的交叉关系</p>
-</li>
-<li><p>典型相关分析是研究两组变量之间的相关关系的统计分析方法</p>
-</li>
-<li><p>因子分析中因子载荷系数的统计意义是：第i个变量和第j个公因子之间的相关系数</p>
-</li>
-<li><p>多元分析中，变量有$\underline{}和\underline{}$两种</p>
-</li>
-<li><p>Q型聚类是对样品进行聚类，R型聚类是对变量进行聚类分析</p>
-</li>
-<li><p>判别分析的实质:判别分析是希望利用一斤观测的的变量数据，找出一种判别函数，使得这一函数具有某种最优性质，能够把属于不同类别的样本点尽可能的区别开来。</p>
-</li>
-<li><p>因子分析的基本思想：根据相关性大小将原始变量分组，是的同组内的变量之间的相关性较高，不同组之间的相关性较低。</p>
-</li>
+<li>变量之间的确定性关系$\underline{函数关系}$</li>
+<li>R软件是免费开源的</li>
+<li>第一对典型相关系数显著性检验统计量服从$\underline{\mathcal{X}^2[(p-1)(q-1)]}$ </li>
+<li>对应分析是将R型和Q型因子分析联合起来进行的统计分析方法</li>
+<li>两个或两个以上的变量之间相互影响的关系是$\underline{平行关系}$</li>
+<li>对于典型变量分析描述正确的是：典型相关系数越大，则说明带典型变量对典型变量的解释能力越高</li>
+<li>两组变量一组有p个变量，另一组有q个变量，且p&lt;q进行典型相关分析，则：有p个典型相关系数</li>
+<li>典型相关研究的是两组变量线性间的相关关系</li>
+<li>相关分析的研究内容：现象之间是否相关、现象之间相关的密切程度、现象之间相关的方向</li>
+<li>因子分析的特点： 因子变量的数量远远少于原始变量的个数、因子变量并非原始变量的简单概念、因子变量之间没有线性关系、因子变量具有明确的解释性，可以最大限度地发挥专业分析的作用。</li>
+<li>可进行聚类的统计量有距离和相似系数</li>
+<li>回归分析是研究依存关系的相关变量之间的关系</li>
+<li>典型相关分析是研究两组变量之间相关关系的统计分析方法</li>
+<li>在R语言中计算均值的函数是：mean() X的样本均值：6.67 计算方差的函数是var，X的样本方差为：2.5</li>
+<li>相关分析是研究呈平行关系的相关变量之间的关系</li>
+<li>椅子分析中因子载荷系数的统计意义是：第i个变量和第j个公因子之间的相关系数</li>
+<li>解释变量一般有3种取值方法</li>
+<li>对应分析是将Q型因子分析和R型因子分析结合起来的统计分析方法</li>
+<li>聚类分析的方法有Q型聚类分析和R型聚类分析</li>
+<li>线性相关分析是用相关系数表示两个变量之间的相互的线性关系</li>
+<li>对应分析反应的是样品和变量之间的交叉关系</li>
+<li>典型相关分析是研究两组变量之间的相关关系的统计分析方法</li>
+<li>因子分析中因子载荷系数的统计意义是：第i个变量和第j个公因子之间的相关系数</li>
+<li>多元分析中，变量有$\underline{}和\underline{}$两种</li>
+<li>Q型聚类是对样品进行聚类，R型聚类是对变量进行聚类分析</li>
+<li>判别分析的实质:判别分析是希望利用一斤观测的的变量数据，找出一种判别函数，使得这一函数具有某种最优性质，能够把属于不同类别的样本点尽可能的区别开来。</li>
+<li>因子分析的基本思想：根据相关性大小将原始变量分组，是的同组内的变量之间的相关性较高，不同组之间的相关性较低。</li>
 </ol>
 <h2 id="测验2"><a href="#测验2" class="headerlink" title="测验2"></a>测验2</h2><ol>
 <li><p>主成分分析的数学模型本质上是一种非线性变换</p>
@@ -490,7 +465,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2021</span>
+  <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

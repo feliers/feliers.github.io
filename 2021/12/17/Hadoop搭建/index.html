@@ -77,7 +77,9 @@
   </style>
 </noscript>
 
-</head>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+<!-- hexo injector head_end end --></head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
   <div class="container use-motion">
@@ -215,7 +217,6 @@
 
       
         <span id="more"></span>
-
 <h2 id="一、HDFS"><a href="#一、HDFS" class="headerlink" title="一、HDFS"></a>一、HDFS</h2><h5 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h5><p>HDFS是一个分布式的文件系统，可用于存储文件。适合一次写入多次读取的模式。但是支持文件修改，如有错误可将错误文件删除后重新上传。</p>
 <h5 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h5><ul>
 <li><p>优点：</p>
@@ -243,8 +244,7 @@
 <ol>
 <li><p>存储小文件会占用namenode 的存储空间，</p>
 <pre><code>2. 小文件存储的寻址时间会超过读取时间。
-</code></pre>
-</li>
+</code></pre></li>
 </ol>
 </li>
 <li><p>不支持并发写入（多个用户写入一个文件）、文件随机修改（更改文件的位置）</p>
@@ -437,7 +437,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2021</span>
+  <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
